@@ -12,7 +12,7 @@ export default function Footer() {
                Driveteq Motors (Pvt)LTD
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Providing Zimbabwe with the best selection of quality vehicles. 
+              Providing Zimbabwe with the best selection of quality vehicles. We also specialize in buying damaged cars and mostly motor spares.
               Your journey to a better drive starts here with transparency and trust.
             </p>
           </div>

@@ -14,6 +14,8 @@ export default function Navbar() {
     { name: "About Us", href: "/about" },
     { name: "News & Videos", href: "/#news" },
     { name: "Sell Your Car", href: "/sell" },
+    { name: "Request Parts", href: "/parts" },
+    { name: "Request Parts", href: "/parts" },
   ];
 
   return (

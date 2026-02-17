@@ -22,7 +22,7 @@ export default function About() {
             </h2>
             <p className="text-lg text-gray-600 font-medium leading-relaxed mb-6">
                Driveteq started with a simple vision: to make high-quality vehicles accessible through a 
-              transparent, digital-first marketplace. We believe buying or selling a car should be as 
+              transparent, digital-first marketplace. We also specialize in buying damaged cars and mostly motor spares. We believe buying or selling a car should be as 
               simple as catching a breeze.
             </p>
             <div className="flex gap-4">
@@ -60,6 +60,53 @@ export default function About() {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-gray-400">{stat.label}</p>
             </div>
           ))}
+        </div>
+
+        {/* Motor Spares Section */}
+        <div className="py-24 flex flex-col lg:flex-row-reverse gap-16 items-center">
+          <div className="lg:w-1/2">
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 italic tracking-tighter mb-6 leading-none">
+              YOUR SOURCE FOR <br />
+              <span className="text-black">QUALITY SPARES.</span>
+            </h2>
+            <p className="text-lg text-gray-600 font-medium leading-relaxed mb-6">
+              Beyond vehicle sales, Driveteq is a leading buyer and supplier of motor spares and damaged vehicles. 
+              Whether you are looking for hard-to-find parts or looking to sell a non-runner, we provide fair valuations and a vast inventory of quality components.
+            </p>
+            <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-black"></span>
+                  <span className="font-bold text-gray-700">We buy accident-damaged vehicles for cash</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-black"></span>
+                  <span className="font-bold text-gray-700">Extensive range of genuine motor spares</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-black"></span>
+                  <span className="font-bold text-gray-700">Expert advice on parts compatibility</span>
+                </li>
+            </ul>
+            <div className="flex flex-wrap gap-4">
+                <Link href="/sell" className="inline-block px-8 py-4 bg-black text-white rounded-full font-black uppercase tracking-widest text-xs hover:bg-gray-800 transition-all">
+                Sell Your Spares
+                </Link>
+                <Link href="/parts" className="inline-block px-8 py-4 border-2 border-black text-black rounded-full font-black uppercase tracking-widest text-xs hover:bg-black hover:text-white transition-all">
+                Request Spares
+                </Link>
+            </div>
+          </div>
+          <div className="lg:w-1/2 relative">
+             <div className="relative aspect-square rounded-[40px] overflow-hidden shadow-2xl bg-gray-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1486262715619-01b8025d9701?q=80&w=2070&auto=format&fit=crop"
+                  alt="Motor Spares"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+             </div>
+          </div>
         </div>
 
         {/* Culture Section */}

@@ -59,7 +59,7 @@ export default function SellForm() {
       <div className="max-w-6xl mx-auto px-6 py-12 animate-in fade-in duration-700 text-center lg:text-left">
         <h1 className="text-5xl font-black text-gray-900 mb-4 tracking-tight italic uppercase">Sell your car <span className="text-black">your way</span></h1>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto lg:mx-0">Quickly and securely cash-in your offer from a local dealer on Breezecars.</p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">Get instant offer</h2>
             <ul className="space-y-4">
@@ -77,6 +77,34 @@ export default function SellForm() {
           <div className="relative w-full h-[350px]">
             <Image src="https://www.cars.com/images/sell-v3/instant-offer-illustration.png" alt="Sell car" fill className="object-contain" unoptimized />
           </div>
+        </div>
+
+        {/* New Section: Damaged Cars & Spares */}
+        <div className="bg-[#1a1a1a] rounded-[40px] p-12 lg:p-16 text-white relative overflow-hidden shadow-2xl">
+            <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
+                <div className="lg:w-1/2 text-center lg:text-left space-y-8">
+                    <div>
+                        <span className="inline-block px-4 py-1 rounded-full bg-white/10 text-white text-[10px] font-black uppercase tracking-widest mb-4 border border-white/5">
+                            We Buy Non-Runners
+                        </span>
+                        <h2 className="text-4xl lg:text-5xl font-black italic uppercase tracking-tighter leading-none">
+                            Damaged Cars & <br/>
+                            <span className="text-gray-500">Motor Spares.</span>
+                        </h2>
+                    </div>
+                    <p className="text-gray-400 font-medium text-lg leading-relaxed">
+                        Turn your accident-damaged vehicle or extra motor spares into cash. We specialize in sourcing parts and buying non-runners with the same instant payment guarantee.
+                    </p>
+                    <button onClick={() => setShowForm(true)} className="px-10 py-5 bg-white text-black font-black rounded-full uppercase tracking-widest hover:bg-gray-200 transition-all shadow-lg hover:scale-105 active:scale-95">
+                        Get A Quote
+                    </button>
+                </div>
+                <div className="lg:w-1/2 w-full relative">
+                    <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <Image src="https://images.unsplash.com/photo-1486262715619-01b8025d9701?q=80&w=2070&auto=format&fit=crop" alt="Auto Spares and Damaged Cars" fill className="object-cover opacity-90 hover:scale-110 transition-transform duration-700" unoptimized />
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     );
